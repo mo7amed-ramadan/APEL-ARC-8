@@ -1,0 +1,44 @@
+body {
+  font-family: "Arabic Ejaza", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.section-container {
+  display: flex;
+  flex-flow: row;
+}
+/* Left section */
+.left-section {
+  width: 40%;
+  position: relative;
+}
+.logo {
+  width: 59px;
+  height: 86px;
+  z-index: 2;
+  float: right;
+  margin: 15px 15px 0 0;
+}
+/* image container */
+.image-container {
+  position: absolute;
+  top: 0;
+}
+.blob {
+  width: 900px;
+  position: fixed;
+  right: -385px;
+  top: -145px;
+  z-index: -1;
+}
+.robot {
+  width: 365px;
+  z-index: 2;
+  position: fixed;
+  right: -90px;
+  top: 135px;
+}
+/* Right section */
+.right-section {
+  width: 60%;
+}
