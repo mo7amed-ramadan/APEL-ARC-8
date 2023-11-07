@@ -1,11 +1,60 @@
+/* Globals */
+:root {
+  --font-color: #024d62;
+  --main-color: #0ea3b2;
+  --button-color: #0e8798;
+  --focus-color: #e6931d;
+  --main-font: "Arabic Ejaza", sans-serif !important;
+}
 body {
-  font-family: "Arabic Ejaza", sans-serif;
+  font-family: var(--main-font);
   margin: 0;
   padding: 0;
 }
 .section-container {
   display: flex;
   flex-flow: row;
+}
+input::placeholder {
+  font-family: var(--main-font);
+  font-size: 24px;
+}
+input {
+  direction: rtl;
+  width: 600px;
+  height: 25px;
+  padding: 5px;
+  margin: 0 0 25px 0;
+  font-size: 24px;
+  font-family: var(--main-font);
+  border-top: none;
+  border-left: none;
+  border-right: 3px solid #adb5bd;
+  border-bottom: 3px solid #adb5bd;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+  border-right: 3px solid var(--focus-color);
+  border-bottom: 3px solid var(--focus-color);
+  transition: 300ms;
+}
+label {
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 24px;
+  color: var(--focus-color);
+  transition: all 0.3s;
+}
+button {
+  font-family: var(--main-font);
+}
+form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 /* Left section */
 .left-section {
@@ -41,4 +90,57 @@ body {
 /* Right section */
 .right-section {
   width: 60%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.title {
+  font-size: 36px;
+  color: var(--font-color);
+  margin: 10px 0 15px 0;
+}
+.input-content {
+  position: relative;
+}
+
+.academic-faculty {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.academic-faculty input {
+  width: 280px;
+}
+.faculty {
+  position: relative;
+}
+.academic {
+  position: relative;
+}
+.show-label {
+  opacity: 1 !important;
+  bottom: 50px !important;
+  transition: all 300ms;
+}
+/* submit button */
+.submit {
+  width: 280px;
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: var(--main-color);
+}
+/* Footer */
+.palestine {
+  width: 150px;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
 }

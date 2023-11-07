@@ -1,0 +1,57 @@
+@media screen and (max-width: 768px) {
+  .right-section {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+  }
+  .left-section {
+    width: 0;
+  }
+  form {
+    background: rgba(255, 255, 255, 0.67);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.2px);
+    -webkit-backdrop-filter: blur(14.2px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    padding: 20px;
+  }
+  input {
+    width: 500px;
+    margin: 0px 0 30px 0;
+  }
+  .show-label {
+    bottom: 60px !important;
+  }
+  #teamName {
+    margin-top: 20px;
+  }
+  .academic-faculty {
+    flex-flow: column;
+  }
+  .academic-faculty input {
+    width: 500px;
+  }
+  .palestine {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .logo {
+    width: 36px;
+    height: 52px;
+  }
+  input {
+    width: 250px;
+    margin: 0px 0 30px 0;
+  }
+  .academic-faculty {
+    width: 100%;
+  }
+  .academic-faculty input {
+    width: 94%;
+  }
+  .submit {
+    width: 190px;
+  }
+}

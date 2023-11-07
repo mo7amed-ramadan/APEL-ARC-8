@@ -10,12 +10,61 @@
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/query.css" </head>
 
 <body>
     <div class="section-container">
         <section class="right-section">
-
+            <header>
+                <h1 class="title">انضم إلى المسابقة</h1>
+            </header>
+            <form class="form" id="form">
+                <div class="input-content">
+                    <label for="teamName" class="team-name" id="labelName">اسم الفريق</label>
+                    <input type="text" name="team-name" id="teamName" placeholder="اسم الفريق" required>
+                </div>
+                <div class="input-content">
+                    <label for="arabicName" id="labelAr">الاسم باللغــة العربيــة</label>
+                    <input type="text" name="arabic-name" id="arabicName" placeholder="الاسم باللغــة العربيــة"
+                        required>
+                </div>
+                <div class="input-content">
+                    <label for="englishName" id="labelEn">الاسم باللغــة الإنجليزيــة</label>
+                    <input type="text" name="english-name" id="englishName" placeholder="الاسم باللغــة الإنجليزيــة"
+                        required>
+                </div>
+                <div class="input-content">
+                    <label for="email" id="labelEmail">البريـد الإلكترونــي</label>
+                    <input type="email" name="email" id="email" placeholder="البريـد الإلكترونــي" required>
+                </div>
+                <div class="input-content">
+                    <label for="phone" id="labelPhone">رقم الهــاتـــف</label>
+                    <input type="tel" name="phone" id="phone" placeholder="رقم الهــاتـــف" required>
+                </div>
+                <div class="input-content">
+                    <label for="nationalId" id="labelNational">الرقم القومـي للبطاقــة</label>
+                    <input type="text" name="national-id" id="nationalId" placeholder="الرقم القومـي للبطاقــة"
+                        required>
+                </div>
+                <div class="input-content">
+                    <label for="university" id="labelUniversity">الجامعــة</label>
+                    <input type="text" name="university" id="university" placeholder="الجامعــة" required>
+                </div>
+                <div class="academic-faculty">
+                    <div class="faculty">
+                        <label for="faculty" id="labelFaculty">الكليــة</label>
+                        <input type="text" name="faculty" id="faculty" placeholder="الكليــة" required>
+                    </div>
+                    <div class="academic">
+                        <label for="academicYear" id="labelAcademicYear">السنــة الدراسيــة</label>
+                        <input type="text" name="academic-year" placeholder="السنــة الدراسيــة" id="academicYear">
+                    </div>
+                </div>
+                <button type="submit" class="submit">سجل الآن</button>
+            </form>
+            <footer>
+                <img src="./images/slogan-palestine.png" alt="slogan-palestine" class="palestine">
+            </footer>
         </section>
         <section class="left-section">
             <div class="container">
@@ -32,6 +81,7 @@
     <!-- Java script files -->
     <script src="./js/all.js"></script>
     <script src="./js/all.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
