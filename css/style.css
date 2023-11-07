@@ -144,3 +144,19 @@ form {
   bottom: 15px;
   left: 15px;
 }
+/* !Errors Style */
+.error {
+  border-bottom: 3px solid red !important;
+  border-right: 3px solid red !important;
+}
+.error-text {
+  font-family: var(--arabic-font);
+  font-weight: 700;
+  color: red;
+  margin-top: -24px;
+  margin-left: auto;
+  position: absolute;
+  width: fit-content;
+  right: 0px;
+  bottom: 0;
+}
