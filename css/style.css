@@ -4,7 +4,13 @@
   --main-color: #0ea3b2;
   --button-color: #0e8798;
   --focus-color: #e6931d;
-  --main-font: "Arabic Ejaza", sans-serif !important;
+  --main-font: "Ejaza", sans-serif !important;
+}
+@font-face {
+  font-family: "Ejaza";
+  src: url("../webfonts/ALFONT_COM_خط-الاجازة.TTF");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   font-family: var(--main-font);
